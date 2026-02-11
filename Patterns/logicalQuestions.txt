@@ -1,0 +1,369 @@
+
+
+
+
+
+1. Array Based
+
+Find the largest element in an array
+
+Find the second largest element
+
+Find the Nth largest element (without built-ins)
+
+Reverse an array manually
+
+Remove duplicates from an array
+
+Check if array is sorted
+
+Rotate array (left/right)
+
+Find missing number in array 1 to N
+
+Find pair whose sum is equal to target
+
+Find frequency of each element (without Map)
+
+Merge two sorted arrays
+
+Move all zeros to the end
+
+Find intersection of two arrays
+
+✅ 2. String Based
+
+Reverse a string without built-ins
+
+Check if string is palindrome
+
+Count vowels in a string
+
+Find first non-repeating character
+
+Remove spaces from string
+
+Convert to title case
+
+Find character frequency
+
+Check if two strings are anagrams
+
+Find longest word in a sentence
+
+Remove duplicate characters
+
+✅ 3. Sorting & Searching
+
+Bubble sort
+
+Selection sort
+
+Insertion sort
+
+Binary search (iterative)
+
+Linear search
+
+✅ 4. Math & Logic
+
+Fibonacci series (without recursion)
+
+Prime number check
+
+Armstrong number check
+
+Reverse a number
+
+Sum of digits
+
+Find GCD of two numbers
+
+Factorial (loop & recursion)
+Check perfect number
+
+
+Print patterns (star patterns)
+
+✅ 5. Stack & Queue (Logic Only)
+
+Implement stack using array
+
+Implement queue using array
+
+Balanced parentheses check
+
+Next greater element
+
+✅ 6. Recursion Based
+
+Print numbers 1 to N recursively
+
+Sum of array using recursion
+
+Reverse string using recursion
+
+Factorial using recursion
+
+✅ 7. Hash/Map Logic (Without using Map)
+
+Count occurrences of elements
+
+Find duplicate elements
+
+Majority element (appears more than n/2 times)
+
+✅ 8. Linked List Basic (Asked in JS Interviews)
+
+Create a simple linked list
+
+Insert at beginning/end
+
+Reverse linked list logic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String Coding Questions
+
+Reverse a string
+
+Check palindrome
+
+Count vowels
+
+Count characters frequency
+
+First non-repeating character
+
+Check anagram
+
+Convert string to title case
+
+Remove spaces from a string
+
+Find longest word in string
+
+Count words in a sentence
+
+Check if string contains only digits
+
+Reverse each word of a sentence
+
+Check if two strings are rotations of each other
+
+✅ 📌 2. Array Coding Questions
+
+Find largest number
+
+Find second largest number
+
+Find Nth largest number (without built-in)
+
+Reverse an array
+
+Remove duplicates (no built-in)
+
+Count frequency of each element
+
+Find missing number from 1 to N
+
+Find pair sum (two-sum logic)
+
+Find unique elements
+
+Rotate array by K
+
+Merge two arrays manually
+
+Find maximum product of two numbers
+
+Check if array is sorted
+
+Move zeros to end
+
+Find intersection of two arrays
+
+Find union of arrays
+
+✅ 📌 3. Math / Logic Questions
+
+Fibonacci series
+
+Prime number check
+
+Armstrong number
+
+Reverse a number (e.g., 123 → 321)
+
+Sum of digits of number
+
+Factorial of number
+
+Check perfect number
+
+Generate random number in range
+
+GCD of two numbers
+
+LCM of two numbers
+
+✅ 📌 4. Searching & Sorting (Basic DSA)
+
+Linear search
+
+Binary search
+
+Bubble sort
+
+Selection sort
+
+Insertion sort
+
+Sort array without built-in sorting
+
+Count sort (basic)
+
+✅ 📌 5. Recursion Questions
+
+Factorial using recursion
+
+Fibonacci using recursion
+
+Sum of array using recursion
+
+Print numbers 1 to N using recursion
+
+Reverse string using recursion
+
+✅ 📌 6. Pattern Printing
+
+Stars pyramid
+
+Reverse pyramid
+
+Number pyramid
+
+Floyd’s triangle
+
+Hollow square pattern
+
+Diamond pattern
+
+✅ 📌 7. Object Coding Questions
+
+Count keys of object
+
+Convert object to array manually
+
+Convert array to object manually
+
+Deep clone object manually
+
+Compare two objects (shallow)
+
+Merge two objects without built-in
+
+✅ 📌 8. Map / Set Logic
+
+Remove duplicates using Set (also without)
+
+Count frequency using Map
+
+Store key-value pairs and loop
+
+✅ 📌 9. Higher-Order Logic (no map/filter/reduce)
+
+Implement map() manually
+
+Implement filter() manually
+
+Implement reduce() manually
+
+✅ 📌 10. Mixed Logical Questions
+
+Check balanced parentheses (){}[]
+
+Find majority element in array
+
+Find longest substring without repeating characters
+
+Merge sorted arrays manually
+
+Flatten nested array (no built-in)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q 2:Write a function to find factorial of a number.
+
+Q 3:Check if a number is prime.
+
+Q:4Write a program to find Fibonacci series.
+
+Find the largest word in a sentence.
+
+Check if two strings are anagrams.
+
+Write a program to flatten a nested array.
+
+Write logic to swap two variables without a third variable.
+
+Find the sum of all even numbers in an array.
+
+Write a function to count occurrences of each character in a string.
+
+Write a function to check if array is sorted.
+
+==========
+Reverse a string without using built-in functions.
+
+Check if a string is a palindrome.
+
+Count vowels and consonants in a string.
+
+Find the first non-repeating character in a string.
+
+Capitalize the first letter of each word in a sentence.
+==========
+Reverse an array without using reverse().
+
+Find the maximum number in an array.
+
+Remove duplicates from an array.
+
+Merge two arrays and remove duplicates.
+
+Sort an array of numbers in ascending order.
+
+Count occurrences of each element in an array.
+
+Convert an array of objects to a single object:
+==========
+Q 1 : Write a function to print numbers 1–5 with a 1-second delay each.

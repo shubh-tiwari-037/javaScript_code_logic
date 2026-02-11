@@ -1,0 +1,14 @@
+.red{
+ color: red;
+}
+.pink{
+    background-color: hsl(322, 89%, 74%);
+    border: 1px solid black;
+}
+.blue{
+    color: blue;
+}
+.btnStyle{
+    background-color: blue;
+
+}
