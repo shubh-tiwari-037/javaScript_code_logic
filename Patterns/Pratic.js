@@ -64,4 +64,44 @@
 // Sum of digits
 // Check perfect number
 
+// let str="shubham"
+// const reversed= function(str){
+//     str=str.split("")
+//     let start =0;
+//     let end= str.length;
+//     while(start<end){
+//         let temp= str[start]
+//         str[start]= str[end]
+//         str[end] = temp;
+//         start++;
+//         end--;
+//     }
+//     return str.join("")
 
+// }
+// console.log(reversed(str))
+// ------------------------
+// let str="shubham"
+// const revers= function(str){
+//     let reversed=""
+//     for(let i=str.length-1; i>=0; i--){
+//         reversed+=str[i]
+//     }
+//     return reversed
+// }
+// console.log(revers(str))
+
+// pailndrome
+const paiindrome= function(str){
+     let start =0;
+    let end= str.length-1;
+    while(start<end){
+        if(str[start] === str[end])  return true
+        
+            start++;
+            end--
+        
+    }
+    return false
+}
+console.log(paiindrome("jmadamji"))
