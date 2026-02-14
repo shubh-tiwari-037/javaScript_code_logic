@@ -91,17 +91,31 @@
 // }
 // console.log(revers(str))
 
-// pailndrome
-const paiindrome= function(str){
-     let start =0;
-    let end= str.length-1;
-    while(start<end){
-        if(str[start] === str[end])  return true
+// ==========pailndrome
+// const paiindrome= function(str){
+//      let start =0;
+//     let end= str.length-1;
+//     while(start<end){
+//         if(str[start] === str[end])  return true
         
-            start++;
-            end--
+//             start++;
+//             end--
         
-    }
-    return false
+//     }
+//     return false
+// }
+// console.log(paiindrome("jmadamji"))
+
+// =========first non repeating cheractor
+
+const nonrepeating= function(str){
+    let freq={};
+    let unique=""
+    for(let char of str){
+        if(!freq[char]){
+            unique+=char
+            freq[char]= true
+        }
+    }return unique
 }
-console.log(paiindrome("jmadamji"))
+console.log(nonrepeating("saabbh"))
