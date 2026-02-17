@@ -72,19 +72,35 @@
 // console.log(largest(arr))
 
 // --------------------Nth largest element
+// let arr= [12,3,44,34,13,56,3,110];
+// let n=2;
+// const nthlargest = function(arr,n){
+// for(let i=0; i<arr.length; i++){
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[j]> arr[i]){
+//             let temp = arr[i]
+//             arr[i] = arr[j];
+//             arr[j]= temp
+//         }
+//     }
+// }
+// return arr[n-1]
+// }
+// console.log(nthlargest(arr,n))
+
+// ------------Reverse an array manually
 let arr= [12,3,44,34,13,56,3,110];
-let n=2;
-const nthlargest = function(arr,n){
-for(let i=0; i<arr.length; i++){
-    for(let j=i+1; j<arr.length; j++){
-        if(arr[j]> arr[i]){
-            let temp = arr[i]
-            arr[i] = arr[j];
-            arr[j]= temp
-        }
-    }
+const reversed= function(arr){
+let st = 0;
+let end = arr.length-1;
+while(st < end){
+     let temp = arr[st]
+     arr[st] = arr[end];
+       arr[end]= temp
+       st++;
+       end--;
 }
-return arr[n-1]
+return arr
 }
-console.log(nthlargest(arr,n))
+console.log(reversed(arr))
 
