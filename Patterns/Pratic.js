@@ -49,24 +49,42 @@
 // Remove duplicate characters
 
 
-let arr= [12,3,44,34,13,56,3,]
-const largest = function(arr){
-let large=arr[0]
-let secondLarge= arr[0]
+// let arr= [12,3,44,34,13,56,3,]
+// const largest = function(arr){
+// let large=arr[0]
+// let secondLarge= arr[0]
 
-for(let i=0; i<arr.length; i++){
-    if(arr[i] > large){
-        secondLarge = large
-        large = arr[i]
-    }
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] > large){
+//         secondLarge = large
+//         large = arr[i]
+//     }
 
-    if(arr[i]< large && arr[i]> secondLarge){
-        secondLarge = large;
+//     if(arr[i]< large && arr[i]> secondLarge){
+//         secondLarge = large;
         
+//     }
+
+// }
+// return {large, secondLarge}
+// }
+
+// console.log(largest(arr))
+
+// --------------------Nth largest element
+let arr= [12,3,44,34,13,56,3,110];
+let n=2;
+const nthlargest = function(arr,n){
+for(let i=0; i<arr.length; i++){
+    for(let j=i+1; j<arr.length; j++){
+        if(arr[j]> arr[i]){
+            let temp = arr[i]
+            arr[i] = arr[j];
+            arr[j]= temp
+        }
     }
-
 }
-return {large, secondLarge}
+return arr[n-1]
 }
+console.log(nthlargest(arr,n))
 
-console.log(largest(arr))
