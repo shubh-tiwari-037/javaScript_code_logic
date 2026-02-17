@@ -452,19 +452,31 @@
 // console.log(nonReptChar(char))
 
 // -------------first non repiting char  second method
-const firstnonrept = function(str){
-    let freq={}
-    for(let char of str){
-        freq[char]= (freq[char] || 0) + 1;
-    }
+// const firstnonrept = function(str){
+//     let freq={}
+//     for(let char of str){
+//         freq[char]= (freq[char] || 0) + 1;
+//     }
 
-  for(let char of str){
-      if(freq[char]===1) return char
-    }
-    return null
-}
-console.log(firstnonrept("sshhub"))
+//   for(let char of str){
+//       if(freq[char]===1) return char
+//     }
+//     return null
+// }
+// console.log(firstnonrept("sshhub"))
 
+// ===it give all non repeating char
+// const nonrepeating= function(str){
+//     let freq={};
+//     let unique=""
+//     for(let char of str){
+//         if(!freq[char]){
+//             unique+=char
+//             freq[char]= true
+//         }
+//     }return unique
+// }
+// console.log(nonrepeating("saabbh"))
 
 // =================Remove spaces from string
 
