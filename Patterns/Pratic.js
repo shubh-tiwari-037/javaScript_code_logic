@@ -139,17 +139,31 @@
 // ----------check arr is sorted or not
 
 // let arr=[12,15,21,23,34,44,45,222];
-let arr=[12,9,7,5,2,1]
+// let arr=[12,9,7,5,2,1]
 
-const sorted = function(ar){
-    let asc= true;
-    let desc=true;
-    for(let i=0; i<arr.length-1; i++){
-        if(arr[i]>arr[i+1]) asc=false;
-        if(arr[i]<arr[i+1]) desc= false
-    }
-    if (asc) return " Sorted Ascending";
-    if (desc) return " Sorted Descending";
-    return "Not Sorted";
+// const sorted = function(ar){
+//     let asc= true;
+//     let desc=true;
+//     for(let i=0; i<arr.length-1; i++){
+//         if(arr[i]>arr[i+1]) asc=false;
+//         if(arr[i]<arr[i+1]) desc= false
+//     }
+//     if (asc) return " Sorted Ascending";
+//     if (desc) return " Sorted Descending";
+//     return "Not Sorted";
+// }
+// console.log(sorted(arr))
+
+
+// --------------Find missing number in array 1 to N
+let arr=[1,2,3,4,5,6,8]
+ const missingNum =function(arr){
+let length = arr.length+1;
+let totalSum = length*(length+1)/2
+let arrSum=0
+for(let i=0; i<arr.length; i++){
+    arrSum+=arr[i]
 }
-console.log(sorted(arr))
+return totalSum-arrSum
+}
+console.log(missingNum(arr))
