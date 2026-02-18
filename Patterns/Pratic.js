@@ -105,7 +105,7 @@
 // console.log(reversed(arr))
 
 // -----------Remove duplicates from an array
-let arr=[1,3,5,7,3,5,12,43,12]
+// let arr=[1,3,5,7,3,5,12,43,12]
 // const uniqueArr=function(arr){
 // let unique=[]
 // for(let i=0; i<arr.length; i++){
@@ -116,22 +116,40 @@ let arr=[1,3,5,7,3,5,12,43,12]
 // }
 // console.log(uniqueArr(arr))
 // -----------------another way
-const uniqueArr= function(){
-    let result =[]
-    for(let i=0; i<arr.length-1;i++){
-        let isduplicate=false;
-        for(let j=0; j<result.length; j++){
-            if(arr[i]===result[j]){
-                isduplicate= true;
-                break;
-            }
-        }
-        
-          if(!isduplicate){
-        result.push(arr[i])
-    }
-    }
+// const uniqueArr= function(){
+//     let result =[]
+//     for(let i=0; i<arr.length-1;i++){
+//         let isduplicate=false;
+//         for(let j=0; j<result.length; j++){
+//             if(arr[i]===result[j]){
+//                 isduplicate= true;
+//                 break;
+//             }
+//         }
+
+//           if(!isduplicate){
+//         result.push(arr[i])
+//     }
+//     }
   
-    return result
+//     return result
+// }
+// console.log(uniqueArr(arr))
+
+// ----------check arr is sorted or not
+
+// let arr=[12,15,21,23,34,44,45,222];
+let arr=[12,9,7,5,2,1]
+
+const sorted = function(ar){
+    let asc= true;
+    let desc=true;
+    for(let i=0; i<arr.length-1; i++){
+        if(arr[i]>arr[i+1]) asc=false;
+        if(arr[i]<arr[i+1]) desc= false
+    }
+    if (asc) return " Sorted Ascending";
+    if (desc) return " Sorted Descending";
+    return "Not Sorted";
 }
-console.log(uniqueArr(arr))
+console.log(sorted(arr))
