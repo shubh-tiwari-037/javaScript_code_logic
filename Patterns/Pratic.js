@@ -89,18 +89,29 @@
 // console.log(nthlargest(arr,n))
 
 // ------------Reverse an array manually
-let arr= [12,3,44,34,13,56,3,110];
-const reversed= function(arr){
-let st = 0;
-let end = arr.length-1;
-while(st < end){
-     let temp = arr[st]
-     arr[st] = arr[end];
-       arr[end]= temp
-       st++;
-       end--;
-}
-return arr
-}
-console.log(reversed(arr))
+// let arr= [12,3,44,34,13,56,3,110];
+// const reversed= function(arr){
+// let st = 0;
+// let end = arr.length-1;
+// while(st < end){
+//      let temp = arr[st]
+//      arr[st] = arr[end];
+//        arr[end]= temp
+//        st++;
+//        end--;
+// }
+// return arr
+// }
+// console.log(reversed(arr))
 
+// -----------Remove duplicates from an array
+let arr=[1,3,5,7,3,5,12,43,12]
+const uniqueArr=function(arr){
+let unique=[]
+for(let i=0; i<arr.length; i++){
+    if(!unique.includes(arr[i])){
+        unique.push(arr[i])
+    }
+} return unique
+}
+console.log(uniqueArr(arr))
