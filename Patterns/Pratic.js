@@ -106,12 +106,32 @@
 
 // -----------Remove duplicates from an array
 let arr=[1,3,5,7,3,5,12,43,12]
-const uniqueArr=function(arr){
-let unique=[]
-for(let i=0; i<arr.length; i++){
-    if(!unique.includes(arr[i])){
-        unique.push(arr[i])
+// const uniqueArr=function(arr){
+// let unique=[]
+// for(let i=0; i<arr.length; i++){
+//     if(!unique.includes(arr[i])){
+//         unique.push(arr[i])
+//     }
+// } return unique
+// }
+// console.log(uniqueArr(arr))
+// -----------------another way
+const uniqueArr= function(){
+    let result =[]
+    for(let i=0; i<arr.length-1;i++){
+        let isduplicate=false;
+        for(let j=0; j<result.length; j++){
+            if(arr[i]===result[j]){
+                isduplicate= true;
+                break;
+            }
+        }
+        
+          if(!isduplicate){
+        result.push(arr[i])
     }
-} return unique
+    }
+  
+    return result
 }
 console.log(uniqueArr(arr))
