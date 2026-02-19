@@ -156,14 +156,66 @@
 
 
 // --------------Find missing number in array 1 to N
-let arr=[1,2,3,4,5,6,8]
- const missingNum =function(arr){
-let length = arr.length+1;
-let totalSum = length*(length+1)/2
-let arrSum=0
-for(let i=0; i<arr.length; i++){
-    arrSum+=arr[i]
+// let arr=[1,2,3,4,5,6,8]
+//  const missingNum =function(arr){
+// let length = arr.length+1;
+// let totalSum = length*(length+1)/2
+// let arrSum=0
+// for(let i=0; i<arr.length; i++){
+//     arrSum+=arr[i]
+// }
+// return totalSum-arrSum
+// }
+// console.log(missingNum(arr))
+
+// =====================Find pair whose sum is equal to target
+// let target=25;
+// let arr =[12,15,21,23,34,44,45,2]
+// const findpair=function(arr,target){
+// for(let i=0; i<arr.length; i++){
+//     for(let j=0; j<arr.length; j++){
+//         if(i!==j && arr[i] + arr[j]===target){
+//             return [arr[i],arr[j]]
+//         }
+//     }
+// } return "no pair found"
+// }
+// console.log(findpair(arr,target))
+
+// // -----------Find frequency of each element (without Map)
+//  let arr =[21,15,21,23,34,44,45,23]
+//  const frequency= function(arr){
+//     let freq={}
+// for(let el of arr){
+//     if(freq[el]){
+//         freq[el]=freq[el]+=1
+//     }else{
+//         freq[el]=freq[el]=1
+//     }
+// }return freq
+//  }
+// console.log(frequency(arr))
+
+// merge two sorted array
+let arr2 =[2,4,6,9,21,32,59]
+let arr1 =[3,5,8,1,2,34,56,]
+
+const merged= function(arr1,arr2){
+let mergedArr=[]
+let i=0, j=0;
+while(i<arr1.length && j<arr2.length){
+    if(arr1[i]< arr2[j]){
+        mergedArr.push(arr1[i])
+        i++
+    } else{
+        mergedArr.push(arr2[j])
+        j++
+    }
 }
-return totalSum-arrSum
+
+while(i<arr1.length) mergedArr.push(arr1[i++])
+    
+while(j<arr2.length)  mergedArr.push(arr2[j++])
+    return mergedArr
 }
-console.log(missingNum(arr))
+console.log(merged(arr1,arr2))
