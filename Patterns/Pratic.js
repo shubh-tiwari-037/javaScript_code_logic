@@ -197,25 +197,45 @@
 // console.log(frequency(arr))
 
 // merge two sorted array
-let arr2 =[2,4,6,9,21,32,59]
-let arr1 =[3,5,8,1,2,34,56,]
+// let arr2 =[2,4,6,9,21,32,59]
+// let arr1 =[3,5,8,1,2,34,56,]
 
-const merged= function(arr1,arr2){
-let mergedArr=[]
-let i=0, j=0;
-while(i<arr1.length && j<arr2.length){
-    if(arr1[i]< arr2[j]){
-        mergedArr.push(arr1[i])
-        i++
-    } else{
-        mergedArr.push(arr2[j])
-        j++
-    }
-}
+// const merged= function(arr1,arr2){
+// let mergedArr=[]
+// let i=0, j=0;
+// while(i<arr1.length && j<arr2.length){
+//     if(arr1[i]< arr2[j]){
+//         mergedArr.push(arr1[i])
+//         i++
+//     } else{
+//         mergedArr.push(arr2[j])
+//         j++
+//     }
+// }
 
-while(i<arr1.length) mergedArr.push(arr1[i++])
+// while(i<arr1.length) mergedArr.push(arr1[i++])
     
-while(j<arr2.length)  mergedArr.push(arr2[j++])
-    return mergedArr
+// while(j<arr2.length)  mergedArr.push(arr2[j++])
+//     return mergedArr
+// }
+// console.log(merged(arr1,arr2))
+
+// / --------------Move all zeros to the end
+
+let arr=[2,5,0,0,8,9,0,21]
+const moved=function(arr){
+    let result=[]
+    for(let el of arr){
+        if(el!==0) {
+            result.push(el)
+        }
+    }
+
+     for(let el of arr){
+        if(el=== 0) {
+            result.push(0)
+        }
+    }
+return result
 }
-console.log(merged(arr1,arr2))
+console.log(moved(arr))
