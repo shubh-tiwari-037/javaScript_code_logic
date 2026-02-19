@@ -222,20 +222,67 @@
 
 // / --------------Move all zeros to the end
 
-let arr=[2,5,0,0,8,9,0,21]
-const moved=function(arr){
-    let result=[]
-    for(let el of arr){
-        if(el!==0) {
-            result.push(el)
-        }
-    }
+// let arr=[2,5,0,0,8,9,0,21]
+// const moved=function(arr){
+//     let result=[]
+//     for(let el of arr){
+//         if(el!==0) {
+//             result.push(el)
+//         }
+//     }
 
-     for(let el of arr){
-        if(el=== 0) {
-            result.push(0)
-        }
+//      for(let el of arr){
+//         if(el=== 0) {
+//             result.push(0)
+//         }
+//     }
+// return result
+// }
+// console.log(moved(arr))
+
+// --------Find intersection of two arrays
+// let arr1=[1, 2, 3, 4,23,56,76,34,22,89,]
+// let arr2 =[3, 4, 5, 6,89,76]
+// const interSection= function(arr1,arr2){
+// let section=[]
+// for(let i=0; i<arr1.length; i++){
+//     for(let j=0; j<arr2.length; j++){
+//         if(arr1[i]===arr2[j]){
+//             section.push(arr1[i])
+//         }
+//     }
+// } return section
+// }
+// console.log(interSection(arr1,arr2))
+
+// //-----------Reverse a string without built-ins
+// let str="haridurshan"
+// const reversed=function(str){
+//     str=str.split(" ")
+// let st=0;
+// let end=str.length-1;
+
+// while(st < end){
+//     let temp =str[st];
+//     str[st]= str[end]
+//    str[end]=temp;
+//     st++
+//     end--;
+// }
+// return str.join(" ")
+// }
+// console.log(reversed(str))
+
+// -----------Check if string is palindrome
+let str="daladq"
+const paindrome= function(str){
+    let st=0; 
+    let end=str.length-1;
+    while(st<end){
+        if(str[st]===str[end]) return true
+        st++;
+        end--
     }
-return result
+    return false
 }
-console.log(moved(arr))
+console.log(paindrome(str))
