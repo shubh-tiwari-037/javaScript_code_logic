@@ -286,3 +286,16 @@
 //     return false
 // }
 // console.log(paindrome(str))
+
+// -------------Count vowels in a string
+let str="shubham tiwari"
+function countvovels(str){
+    str=str.toLowerCase()
+    let count=0
+    for(let i=0; i<str.length; i++){
+        if(str[i] == "a" ||str[i] == "e" ||str[i] =="i" ||str[i] =="o" ||str[i] =="u"){
+            count++
+        }
+    } return count 
+}
+console.log(countvovels(str))
