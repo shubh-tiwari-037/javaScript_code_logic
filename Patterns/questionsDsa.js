@@ -801,14 +801,27 @@
 // STRING BASE NEW QUESTIONS
 
 // ==============REMOVE ALL SPACES FROM STRING
-let str="h a rer i i"
-function Alltogether(str){
-    let result=""
+// let str="h a rer i i"
+// function Alltogether(str){
+//     let result=""
+//     for(let i=0; i<str.length; i++){
+//         if(str[i] !==" "){
+//             result+=str[i]
+//         }
+//     }
+// return result
+// }
+// console.log(Alltogether(str))
+
+// ==========CHECK IF STR CONTAINS ONLY DIGITS
+let str="7687a68"
+function onlydigit(str){
     for(let i=0; i<str.length; i++){
-        if(str[i] !==" "){
-            result+=str[i]
+        let ch=str[i]
+        if(ch <"0" || ch >"9"){
+            return false
         }
     }
-return result
+    return true
 }
-console.log(Alltogether(str))
+console.log(onlydigit(str))
