@@ -789,6 +789,26 @@
 // console.log(bubbleSort(arr))
 
 
-// ==========Insertion sort
 
 
+
+
+
+
+
+
+
+// STRING BASE NEW QUESTIONS
+
+// ==============REMOVE ALL SPACES FROM STRING
+let str="h a rer i i"
+function Alltogether(str){
+    let result=""
+    for(let i=0; i<str.length; i++){
+        if(str[i] !==" "){
+            result+=str[i]
+        }
+    }
+return result
+}
+console.log(Alltogether(str))

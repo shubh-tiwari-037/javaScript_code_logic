@@ -274,15 +274,15 @@
 // console.log(reversed(str))
 
 // -----------Check if string is palindrome
-let str="daladq"
-const paindrome= function(str){
-    let st=0; 
-    let end=str.length-1;
-    while(st<end){
-        if(str[st]===str[end]) return true
-        st++;
-        end--
-    }
-    return false
-}
-console.log(paindrome(str))
+// let str="dalad"
+// const paindrome= function(str){
+//     let st=0; 
+//     let end=str.length-1;
+//     while(st<end){
+//         if(str[st]===str[end]) return true
+//         st++;
+//         end--
+//     }
+//     return false
+// }
+// console.log(paindrome(str))
