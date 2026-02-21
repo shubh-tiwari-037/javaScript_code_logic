@@ -514,26 +514,26 @@
 // console.log(titelCase("mai to hu na "))
 
 // ===================Find character frequency
-// let arr ="programming"
+let arr ="programming"
 
-// const repet = function(arr){
-// let freq ={};
-// let char =""
+const repet = function(arr){
+let freq ={};
+let char =""
 
-// for(let i=0; i<arr.length; i++){
-//  if(freq[arr[i]]){
-//   freq[arr[i]] +=1;
-//   char+=arr[i]
-// } else{
+for(let i=0; i<arr.length; i++){
+ if(freq[arr[i]]){
+  freq[arr[i]] +=1;
+  char+=arr[i]
+} else{
 
-// freq[arr[i]] =1;
-// }
-// } 
+freq[arr[i]] =1;
+}
+} 
 
-// return char;
-// }
+return char;
+}
 
-// console.log(repet(arr));
+console.log(repet(arr));
 
 // -----------------------
 
@@ -814,14 +814,14 @@
 // console.log(Alltogether(str))
 
 // ==========CHECK IF STR CONTAINS ONLY DIGITS
-let str="7687a68"
-function onlydigit(str){
-    for(let i=0; i<str.length; i++){
-        let ch=str[i]
-        if(ch <"0" || ch >"9"){
-            return false
-        }
-    }
-    return true
-}
-console.log(onlydigit(str))
+// let str="7687a68"
+// function onlydigit(str){
+//     for(let i=0; i<str.length; i++){
+//         let ch=str[i]
+//         if(ch <"0" || ch >"9"){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(onlydigit(str))

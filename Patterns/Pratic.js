@@ -288,14 +288,66 @@
 // console.log(paindrome(str))
 
 // -------------Count vowels in a string
-let str="shubham tiwari"
-function countvovels(str){
-    str=str.toLowerCase()
-    let count=0
+// let str="shubham tiwari"
+// function countvovels(str){
+//     str=str.toLowerCase()
+//     let count=0
+//     for(let i=0; i<str.length; i++){
+//         if(str[i] == "a" ||str[i] == "e" ||str[i] =="i" ||str[i] =="o" ||str[i] =="u"){
+//             count++
+//         }
+//     } return count 
+// }
+// console.log(countvovels(str))
+
+// -----------Find all non-repeating character
+// let str="bbbcggdde"
+// function nonrept(str){
+// let freq={}
+// let unique=""
+// for(let ch of str){
+//     if(!freq[ch]){
+//         unique+=ch;
+//         freq[ch]=true
+//     }
+// }return unique
+// }
+// console.log(nonrept(str))
+
+// ----------DUPLICATE CHAR
+// let str= "shubhamishubham"
+// function removDuplicat(){
+//     let freq={}
+//     let char=""
+//     for(let ch of str){
+//         if(!freq[ch]){
+//             char+=ch
+//             freq[ch]=true
+//         }
+//     }
+//     return char
+// }
+// console.log(removDuplicat(str))
+
+// ----------LONGEST WORD
+let str="mai shubhan hu haridurshan"
+function longestWord(str){
+    let long=""; let word="";
     for(let i=0; i<str.length; i++){
-        if(str[i] == "a" ||str[i] == "e" ||str[i] =="i" ||str[i] =="o" ||str[i] =="u"){
-            count++
+        if(str[i]!==" "){
+            word+=str[i]
+        }else{
+            if(word.length > long.length){
+                long= word
+            }
+            word=" "
         }
-    } return count 
+    }
+
+    if(word.length > long.length){
+        long = word
+    }
+
+    return long
 }
-console.log(countvovels(str))
+console.log(longestWord(str));
