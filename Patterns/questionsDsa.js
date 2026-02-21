@@ -514,26 +514,26 @@
 // console.log(titelCase("mai to hu na "))
 
 // ===================Find character frequency
-let arr ="programming"
+// let arr ="programming"
 
-const repet = function(arr){
-let freq ={};
-let char =""
+// const repet = function(arr){
+// let freq ={};
+// let char =""
 
-for(let i=0; i<arr.length; i++){
- if(freq[arr[i]]){
-  freq[arr[i]] +=1;
-  char+=arr[i]
-} else{
+// for(let i=0; i<arr.length; i++){
+//  if(freq[arr[i]]){
+//   freq[arr[i]] +=1;
+//   char+=arr[i]
+// } else{
 
-freq[arr[i]] =1;
-}
-} 
+// freq[arr[i]] =1;
+// }
+// } 
 
-return char;
-}
+// return char;
+// }
 
-console.log(repet(arr));
+// console.log(repet(arr));
 
 // -----------------------
 
@@ -551,25 +551,25 @@ console.log(repet(arr));
 
 // ======================Check if two strings are anagrams
 
-// function isAnagram(str1, str2) {
-//   str1 = str1.toLowerCase();
-//   str2 = str2.toLowerCase();
+function isAnagram(str1, str2) {
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
 
-//   if (str1.length !== str2.length) return false;
+  if (str1.length !== str2.length) return false;
 
-//   let freq1 = {}, freq2 = {};
+  let freq1 = {}, freq2 = {};
 
-//   for (let ch of str1) freq1[ch] = (freq1[ch] || 0) + 1;
-//   for (let ch of str2) freq2[ch] = (freq2[ch] || 0) + 1;
+  for (let ch of str1) freq1[ch] = (freq1[ch] || 0) + 1;
+  for (let ch of str2) freq2[ch] = (freq2[ch] || 0) + 1;
 
-//   for (let key in freq1) {
-//     if (freq1[key] !== freq2[key]) return false;
-//   }
+  for (let key in freq1) {
+    if (freq1[key] !== freq2[key]) return false;
+  }
 
-//   return true;
-// }
-// console.log(isAnagram("listen", "silent")); // true
-// console.log(isAnagram("hello", "world")); 
+  return true;
+}
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world")); 
 
 
 // ================Remove duplicate characters

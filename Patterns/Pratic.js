@@ -330,24 +330,55 @@
 // console.log(removDuplicat(str))
 
 // ----------LONGEST WORD
-let str="mai shubhan hu haridurshan"
-function longestWord(str){
-    let long=""; let word="";
-    for(let i=0; i<str.length; i++){
-        if(str[i]!==" "){
-            word+=str[i]
-        }else{
-            if(word.length > long.length){
-                long= word
-            }
-            word=" "
-        }
-    }
+// let str="mai shubhan hu haridurshan"
+// function longestWord(str){
+//     let long=""; let word="";
+//     for(let i=0; i<str.length; i++){
+//         if(str[i]!==" "){
+//             word+=str[i]
+//         }else{
+//             if(word.length > long.length){
+//                 long= word
+//             }
+//             word=" "
+//         }
+//     }
 
-    if(word.length > long.length){
-        long = word
-    }
+//     if(word.length > long.length){
+//         long = word
+//     }
 
-    return long
+//     return long
+// }
+// console.log(longestWord(str));
+
+// -------------everse a number
+// let num=7586
+// function revers(num){
+// let rev=""
+// while( num >0){
+//     let digit= num % 10;
+//     rev= rev*10 +digit;
+//     num = Math.floor(num/10)
+// }
+// return rev
+// }
+// console.log(revers(num))
+
+// -----------check string are anafram or not
+function anagram(str1,str2){
+   str1= str1.toLowerCase() 
+   str2= str2.toLowerCase ()
+
+   if(str1.length !== str2.length) return false
+   let freq1={},freq2={};
+
+   for(let ch of str1) freq1[ch] = (freq1[ch] || 0) + 1
+  for(let ch of str2) freq2[ch] = (freq2[ch] || 0) + 1
+
+  for(let key in freq1) {
+    if(freq1[key]!== freq2[key]) return false
+  }
+  return true
 }
-console.log(longestWord(str));
+console.log(anagram("aeioushu","uoieashu"))
