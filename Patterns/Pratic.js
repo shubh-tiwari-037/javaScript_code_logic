@@ -22,13 +22,27 @@
 
 // -----------Number increased pyramid
 
+// let n=5;
+// const numincresed= function(n){
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(j.toString());
+//     }
+//     console.log()
+// }
+// }
+// numincresed(n);
+
+// ---------number changing pyramid
 let n=5;
-const numincresed= function(n){
+const numchange= function(n){
+    let num=1;
 for(let i=1; i<=n; i++){
     for(let j=1; j<=i; j++){
-        process.stdout.write(j.toString());
+        process.stdout.write(num.toString()+" ");
+        num++
     }
     console.log()
 }
 }
-numincresed(n);
+numchange(n);
