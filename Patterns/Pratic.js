@@ -34,15 +34,15 @@
 // numincresed(n);
 
 // ---------number changing pyramid
-let n=5;
-const numchange= function(n){
-    let num=1;
-for(let i=1; i<=n; i++){
-    for(let j=1; j<=i; j++){
-        process.stdout.write(num.toString()+" ");
-        num++
-    }
-    console.log()
-}
-}
-numchange(n);
+// let n=5;
+// const numchange= function(n){
+//     let num=1;
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(num.toString()+" ");
+//         num++
+//     }
+//     console.log()
+// }
+// }
+// numchange(n);
