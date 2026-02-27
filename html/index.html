@@ -8,6 +8,58 @@
 <body>
 
 
+    <form action="/submit" method="POST">
+
+        <!-- Name -->
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required>
+        <br><br>
+
+        <!-- Multiple Choice (Radio Buttons) -->
+        <label>How did you hear about us?</label><br>
+        <input type="radio" name="source" value="social_media" required> Social Media <br>
+        <input type="radio" name="source" value="friend"> Friend <br>
+        <input type="radio" name="source" value="advertisement"> Advertisement <br>
+        <br>
+
+        <!-- Dropdown -->
+        <label>Select Your City:</label><br>
+        <select name="city" required>
+            <option value="">--Select City--</option>
+            <option value="bhopal">Bhopal</option>
+            <option value="indore">Indore</option>
+            <option value="delhi">Delhi</option>
+        </select>
+        <br><br>
+
+        <!-- Rating (1–5) -->
+        <label>Rate Our Service (1–5):</label><br>
+        <input type="radio" name="rating" value="1" required> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+        <br><br>
+
+        <!-- Feedback -->
+        <label>Additional Feedback:</label><br>
+        <textarea name="feedback" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
     <!-- <table border="2" style="position: absolute;">
         <thead>
             <tr>
@@ -50,6 +102,18 @@
             </tr>
         </tbody>
     </table> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- <table border="2" style="position: absolute;">
