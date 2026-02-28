@@ -80,13 +80,13 @@
 // 1
 
 // ------------------number trangular par abhi chala nahi h
-           let n = 4;
-        for(let i= 1; i<=n; i++) {
-            for(let j= 1; j<=i; j++) {
-                process.stdout.write(i. toString());
-            }
-             console.log();
-        }
+        //    let n = 4;
+        // for(let i= 1; i<=n; i++) {
+        //     for(let j= 1; j<=i; j++) {
+        //         process.stdout.write(i. toString());
+        //     }
+        //      console.log();
+        // }
         // output
 // 1
 // 22
